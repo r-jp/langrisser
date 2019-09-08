@@ -1,0 +1,381 @@
+@charset 'UTF-8';
+
+body {
+	font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+	line-height: 1.333;
+	color: #46251d;
+	background: url(../img/Paper_01.png) no-repeat fixed #f2e8d1;
+	background-size: 100% 100%;
+}
+
+a {
+	color: #46251d;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	box-sizing: border-box;
+}
+
+input {
+	display: none;
+}
+
+#wrap {
+	width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 24px;
+	display: flex;
+	padding-top: 30px;
+	color: #46251d;
+	text-shadow: 0 1px 1px #ddd;
+
+	justify-content: center;
+	align-items: center;
+}
+
+h1:before {
+	width: 85px;
+	height: 70px;
+	margin-right: 20px;
+	margin-bottom: -.2em;
+	content: '';
+	background: url(../img/Icon_UnOpen.png) no-repeat 0 0;
+	background-size: contain;
+}
+
+#single h1:before {
+	box-sizing: border-box;
+	width: 70px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	background-size: cover;
+	box-shadow: 0 0 0 1px #46251d;
+}
+
+.cave01 h1:before {
+	background: url(../img/map/400px-Map_BattleMapCave.png);
+}
+.cave02 h1:before {
+	background: url(../img/map/400px-Map_BGCave005.png);
+}
+.village01 h1:before {
+	background: url(../img/map/400px-Map_Graveyard.png);
+}
+.village02 h1:before {
+	background: url(../img/map/400px-Map_L2-7.png);
+}
+.village03 h1:before {
+	background: url(../img/map/400px-Map_L2-1.png);
+}
+.village04 h1:before {
+	background: url(../img/map/400px-Map_Town002.png);
+}
+.village05 h1:before {
+	background: url(../img/map/400px-Map_Town001.png);
+}
+.village06 h1:before {
+	background: url(../img/map/400px-Map_Village006.png);
+}
+.castle01 h1:before {
+	background: url(../img/map/400px-Map_Castle007.png);
+}
+.castle02 h1:before {
+	background: url(../img/map/400px-Map_Castle006.png);
+}
+.castle03 h1:before {
+	background: url(../img/map/400px-Map_L2-17.png);
+}
+.castle04 h1:before {
+	background: url(../img/map/400px-Map_BGWildL2_13.png);
+}
+.castle05 h1:before {
+	background: url(../img/map/400px-Map_Sentry002.png);
+}
+.castle06 h1:before {
+	background: url(../img/map/400px-Map_Temple004.png);
+}
+.castle07 h1:before {
+	background: url(../img/map/400px-Map_BattleMapGate003.png);
+}
+.castle08 h1:before {
+	background: url(../img/map/400px-Map_L2-8.png);
+}
+.castle09 h1:before {
+	background: url(../img/map/400px-Map_Temple005.png);
+}
+.castle10 h1:before {
+	background: url(../img/map/400px-Map_Sentry001.png);
+}
+.etc01 h1:before {
+	background: url(../img/map/400px-Map_L2-5.png);
+}
+.etc02 h1:before {
+	background: url(../img/map/400px-Map_WildField011.png);
+}
+.etc03 h1:before {
+	background: url(../img/map/400px-Map_WildField013.png);
+}
+.etc04 h1:before {
+	background: url(../img/map/400px-Map_WildField005_1.png);
+}
+.etc05 h1:before {
+	background: url(../img/map/400px-Map_Forest002.png);
+}
+.etc06 h1:before {
+	background: url(../img/map/400px-Map_Plain.png);
+}
+.etc07 h1:before {
+	background: url(../img/map/400px-Map_WildField008.png);
+}
+.etc08 h1:before {
+	background: url(../img/map/Map_WildField012.png);
+}
+.etc09 h1:before {
+	background: url(../img/map/400px-Map_Swamp001.png);
+}
+
+h1 a {
+	text-decoration: none;
+	color: #46251d;
+}
+
+h2 {
+	font-size: 19px;
+	display: flex;
+	margin-top: 2em;
+	white-space: nowrap;
+	color: #46251d;
+
+	align-content: stretch;
+	align-items: center;
+}
+
+h2:before,
+h2:after {
+	display: block;
+	width: 50%;
+	height: 1px;
+	content: '';
+}
+
+h2:before {
+	margin-right: 1em;
+	background: linear-gradient(to left, #46251d, transparent);
+}
+h2:after {
+	margin-left: 1em;
+	background: linear-gradient(to right, #46251d, transparent);
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: normal;
+	display: inline-block;
+	margin-bottom: .75em;
+	padding: 7px 15px;
+	color: #fff;
+	border-radius: 5px;
+	background: #a57f4f;
+}
+
+article {
+	margin: 1em 0 2em;
+}
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -5px;
+}
+
+ul li {
+	width: calc(20% - 10px);
+	margin: 5px;
+	list-style: none;
+}
+
+li a {
+	position: relative;
+	display: block;
+	transition: border-color .2s;
+	border: 2px solid #c3a162;
+}
+
+li a:hover {
+	border-color: #fff;
+}
+
+.pattern {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1em 0;
+	padding: 0 10px;
+}
+
+.pattern > li {
+	position: relative;
+	box-sizing: border-box;
+	width: 33.333%;
+	margin: 0;
+	padding: 12px;
+}
+
+.pattern > li > label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+
+.pattern > li > label > img {
+	transition: border-color .2s;
+	border: 2px solid #c3a162;
+}
+
+.pattern > li > label > img:hover {
+	border-color: #fff;
+}
+
+.pop_wrap {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	transition: opacity .2s, transform 0 .2s;
+	transform: scale(0);
+	opacity: 0;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.trigger:checked + .pop_wrap {
+	transition: opacity .2s;
+	transform: scale(1);
+	opacity: 1;
+	background: rgba(0, 0, 0, .8);
+}
+
+.trigger + .pop_wrap .pop_inner {
+	position: fixed;
+	display: none;
+	max-width: 95%;
+	max-height: 95%;
+	color: #fff;
+}
+
+.trigger:checked + .pop_wrap .pop_inner {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column-reverse;
+}
+
+.pop_wrap label {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.pop_wrap img {
+	width: auto;
+	max-height: 80vh;
+}
+
+.pop_wrap ol {
+	display: flex;
+	list-style: none;
+	counter-reset: item;
+	justify-content: space-around;
+}
+
+.pop_wrap ol li {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+.pop_wrap ol li:before {
+	display: inline-block;
+	width: 1.333em;
+	height: 1.333em;
+	margin-right: .5em;
+	content: counter(item);
+	counter-increment: item;
+	text-align: center;
+	border-radius: 999px;
+	background: #b52325;
+}
+
+footer {
+	font-size: 12px;
+	display: flex;
+	margin-top: 40px;
+	padding: 10px 0 20px;
+	text-align: center;
+	white-space: nowrap;
+
+	align-content: stretch;
+	align-items: center;
+}
+
+footer:before,
+footer:after {
+	display: block;
+	width: 50%;
+	height: 1px;
+	content: '';
+}
+
+footer:before {
+	margin-right: 1em;
+	background: linear-gradient(to left, #46251d, transparent);
+}
+footer:after {
+	margin-left: 1em;
+	background: linear-gradient(to right, #46251d, transparent);
+}
+
+@media screen and (max-width: 830px) {
+	#wrap {
+		width: auto;
+	}
+	article {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	h1 {
+		font-size: 18px;
+	}
+	h2 {
+		font-size: 16px;
+	}
+	h3 {
+		font-size: 14px;
+	}
+	ul:not(.pattern) li {
+		width: calc(33.333% - 10px);
+		margin: 5px;
+	}
+	.pattern > li {
+		width: 50%;
+	}
+}
