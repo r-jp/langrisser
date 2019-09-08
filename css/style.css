@@ -215,7 +215,6 @@ li a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 1em 0;
-	padding: 0 10px;
 }
 
 .pattern > li {
@@ -223,7 +222,7 @@ li a:hover {
 	box-sizing: border-box;
 	width: 33.333%;
 	margin: 0;
-	padding: 12px;
+	padding: 5px;
 }
 
 .pattern > li > label {
@@ -371,11 +370,16 @@ footer:after {
 	h3 {
 		font-size: 14px;
 	}
+	.pattern {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
 	ul:not(.pattern) li {
 		width: calc(33.333% - 10px);
 		margin: 5px;
 	}
 	.pattern > li {
 		width: 50%;
+		padding: 5px;
 	}
 }
